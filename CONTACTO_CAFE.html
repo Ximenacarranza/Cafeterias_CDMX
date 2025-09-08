@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Cafeterías CDMX</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f5f2ed; /* Beige suave */
+      color: #333;
+      padding-top: 70px; /* Ajuste para navbar fija */
+    }
+    h2 {
+      color: #5c4033;
+    }
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .btn-primary {
+      background-color: #5c4033;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #3e2a21;
+    }
+    footer {
+      background-color: #3e3e3e;
+      color: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="CAFETERIAS_2.html">☕ Cafeterías CDMX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="MENU_CAFETERIAS.html">Cafeterías</a></li>
+          <li class="nav-item"><a class="nav-link" href="PRODUCTOS_CAFE.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="CONTACTO_CAFE.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <!-- FORMULARIO DE CONTACTO -->
+<div class="container">
+  <div class="card p-4 mt-4">
+    <h2 id="contacto" class="mb-4 text-center">Contáctanos</h2>
+    
+    <form id="formulario" action="pagina_destino.html" method="get">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Tu recomendación</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+
+    <script>
+      document.getElementById('formulario').addEventListener('submit', function() {
+        const nombre = document.getElementById('nombre').value;
+        const correo = document.getElementById('correo').value;
+        const mensaje = document.getElementById('mensaje').value;
+
+        localStorage.setItem('nombre', nombre);
+        localStorage.setItem('correo', correo);
+        localStorage.setItem('mensaje', mensaje);
+
+        alert('¡GRACIAS! Lo tomaremos en cuenta');
+      });
+    </script>
+
+      
+
+      <!-- BOTONES DE REDES -->
+      <div class="text-center mt-4">
+        <a href="https://wa.me/5255678765?text=Hola,%20quiero%20más%20información" class="btn btn-success m-2">
+          <i class="bi bi-whatsapp"></i> WhatsApp
+        </a>
+        <a href="#" class="btn btn-dark m-2">
+          <i class="bi bi-instagram"></i> Instagram
+        </a>
+        <a href="#" class="btn btn-info text-white m-2">
+          <i class="bi bi-facebook"></i> Facebook
+        </a>
+        <a href="mailto:ejemplo@gmail.com" class="btn btn-danger m-2">
+          <i class="bi bi-envelope-fill"></i> Gmail
+        </a>
+      </div>
+    </div>
+
+    <!-- MAPA -->
+    <div class="card mt-5">
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://maps.google.com/maps?q=Mexico%20City&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="text-center mt-5">
+    <p class="mb-0">© 2025 Cafeterías CDMX | Descubre el mejor café de la ciudad</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

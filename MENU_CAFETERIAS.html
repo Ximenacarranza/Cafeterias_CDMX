@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafeterías en CDMX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f5f2ed;
+            color: #333;
+            padding-top: 70px; /* espacio para navbar fija */
+        }
+        h1 { color: #5c4033; }
+        h2 { color: #355e3b; }
+        h3 { color: #1f3d7a; }
+        footer {
+            background-color: #3e3e3e;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            border-radius: 10px;
+        }
+        .btn-primary {
+            background-color: #5c4033;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #3e2a21;
+        }
+        .navbar-brand i {
+            margin-right: 8px;
+            color: #d4a373; /* dorado café */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR IGUAL A LA DEL OTRO DISEÑO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="CAFETERIAS_2.html">
+          <i class="fas fa-mug-hot"></i> Cafeterías CDMX
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="MENU_CAFETERIAS.html">Cafeterías</a></li>
+            <li class="nav-item"><a class="nav-link" href="PRODUCTOS_CAFE.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="CONTACTO_CAFE.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h1>Las mejores cafeterías en la Ciudad de México</h1>
+      <h3>Explora los sabores, aromas y experiencias que hacen de la CDMX un paraíso para los amantes del café.</h3>
+      <p>
+          La Ciudad de México es conocida por su riqueza cultural, su historia y su gastronomía, 
+          pero también por ser uno de los lugares con más cafeterías de calidad en Latinoamérica. 
+          Aquí te mostramos algunas de las mejores opciones para que disfrutes del café como nunca antes.
+      </p>
+
+      <h2 id="cafeterias" class="mt-4 mb-3">Cafeterías destacadas</h2>
+      <div class="row g-4">
+
+          <!-- Arte del cafe -->
+          <div class="col-md-6">
+              <div class="card p-3">
+                  <h4>El Arte del Café</h4>
+                  <p>Un espacio que combina café de especialidad con exposiciones artísticas. Ideal para quienes buscan inspiración entre pinturas y un espresso perfecto.</p>
+                  <button onclick="window.location.href='https://www.facebook.com/ElArtedelCaffe/?locale=es_LA';" type="button" class="btn btn-primary">Visita su sitio </button>
+              </div>
+          </div>
+
+          <!-- Latte Urbano -->
+          <div class="col-md-6">
+              <div class="card p-3">
+                  <h4>Latte Urbano</h4>
+                  <p>Ubicada en la colonia Roma, esta cafetería es moderna y acogedora, perfecta para trabajar con WiFi rápido y un menú de lattes creativos.</p>
+                  <button onclick="window.location.href=' https://www.opentable.com.mx/cafe-urbano';" type="button" class="btn btn-light">Ver menú</button>
+              </div>
+          </div>
+
+          <!-- Cafe tradicion -->
+          <div class="col-md-6">
+              <div class="card p-3">
+                  <h4>Café Tradición</h4>
+                  <p>En el corazón de Coyoacán, este café clásico ofrece panadería artesanal y un ambiente que te transporta a la época colonial.</p>
+                  <button onclick="window.location.href='https://www.latradiciondecoyoacan.com/';" type="button" class="btn btn-primary">Visitar</button>
+              </div>
+          </div>
+
+          <!-- Espresso 24-->
+          <div class="col-md-6">
+              <div class="card p-3">
+                  <h4>Espresso 24</h4>
+                  <p>Conocido por su cold brew y opciones veganas, está abierto las 24 horas, ideal para los que buscan café a cualquier hora del día.</p>
+                  <button onclick="window.location.href='https://www.facebook.com/p/Espresso-Cafeter%C3%ADa-100089473369209/';" type="button" class="btn btn-light">Explorar</button>
+              </div>
+          </div>
+
+          <!-- La terraza del cafe -->
+          <div class="col-md-6">
+              <div class="card p-3">
+                  <h4>La Terraza del Café</h4>
+                  <p>Una terraza en Polanco con vistas espectaculares y postres gourmet que acompañan perfectamente cualquier bebida.</p>
+                  <button onclick="window.location.href='https://www.tripadvisor.com.mx/Restaurant_Review-g150800-d12059567-Reviews-La_terraza_cafe-Mexico_City_Central_Mexico_and_Gulf_Coast.html';" type="button" class="btn btn-primary">Reservar</button>
+              </div>
+          </div>
+
+          <!-- Cafe avellanda -->
+          <div class="col-md-6">
+              <div class="card p-3">
+                  <h4>Café Avellaneda</h4>
+                  <p>Un lugar pequeño en Coyoacán que se especializa en métodos artesanales como V60, Chemex y Aeropress, ideal para los puristas del café.</p>
+                  <button onclick="window.location.href='https://www.facebook.com/Avellanedakf/?locale=es_LA';" type="button" class="btn btn-light">Detalles</button>
+              </div>
+          </div>
+
+          <!-- cafe curado -->
+          <div class="col-md-6">
+              <div class="card p-3">
+                  <h4>Café Curado</h4>
+                  <p>Un concepto moderno en Condesa donde se experimenta con infusiones, bebidas frías y mezclas innovadoras de café.</p>
+                  <button onclick="window.location.href='https://www.facebook.com/cafecurado/?locale=es_LA';" type="button" class="btn btn-light">Conocer más</button>
+              </div>
+          </div>
+
+          <!-- Chiquitito cafe -->
+          <div class="col-md-6">
+              <div class="card p-3">
+                  <h4>Chiquitito Café</h4>
+                  <p>Famoso por sus espacios pequeños y acogedores, perfectos para charlar. Ofrecen uno de los mejores flat whites de la ciudad.</p>
+                  <button onclick="window.location.href=' http://chiquititocafe.com/';" type="button" class="btn btn-primary">Ubicación</button>
+              </div>
+          </div>
+
+          <!-- Cafe nin -->
+          <div class="col-md-6">
+              <div class="card p-3">
+                  <h4>Café Nin</h4>
+                  <p>Un café-panadería que combina repostería de autor con café de especialidad. Su concha de mascarpone es un must.</p>
+                  <button  onclick="window.location.href='https://www.tripadvisor.com.mx/Restaurant_Review-g150800-d12670706-Reviews-Cafe_Nin-Mexico_City_Central_Mexico_and_Gulf_Coast.html';"  type="button" class="btn btn-light">Ver más</button>
+              </div>
+          </div>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center mt-4">
+        <p>&copy; 2025 Cafeterías CDMX

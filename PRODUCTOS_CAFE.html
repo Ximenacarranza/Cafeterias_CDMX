@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafeterías en CDMX</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #f5f2ed; /* Beige neutro */
+            color: #333;
+            padding-top: 70px; /* Ajuste para navbar fija */
+        }
+        h1 { color: #5c4033; } /* Café oscuro */
+        h2 { color: #355e3b; } /* Verde oscuro */
+        h3 { color: #1f3d7a; } /* Azul profundo */
+        footer {
+            background-color: #3e3e3e;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            border-radius: 10px;
+        }
+        .btn-primary {
+            background-color: #5c4033;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #3e2a21;
+        }
+        .navbar-brand i {
+            margin-right: 8px;
+            color: #d4a373; /* Dorado café */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR IGUAL A LA DEL PRIMER DISEÑO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="CAFETERIAS_2.html">
+          <i class="fas fa-mug-hot"></i> Cafeterías CDMX
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="MENU_CAFETERIAS.html">Cafeterías</a></li>
+            <li class="nav-item"><a class="nav-link" href="PRODUCTOS_CAFE.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="CONTACTO_CAFE.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CARRUSEL -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel" style="max-width: 500px; margin: auto;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="500">
+          <img src="Capucchino.jpeg" class="d-block w-100 rounded-3" alt="Capuccino">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Capuccino</h5>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="500">
+          <img src="cold brew.jpeg" class="d-block w-100 rounded-3" alt="Cold Brew">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cold Brew</h5>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="500">
+          <img src="Pan dulce.jpeg" class="d-block w-100 rounded-3" alt="Pan dulce">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Pan dulce</h5>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="Postres.jpeg" class="d-block w-100 rounded-3" alt="Postres">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Postres gourmet</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- TABLA DE PRODUCTOS -->
+    <div class="container">
+      <h2 id="productos" class="mt-5">Productos más vendidos</h2>
+      <table class="table table-bordered table-striped mt-3">
+          <thead class="table-dark">
+              <tr>
+                  <th>Producto</th>
+                  <th>Descripción</th>
+                  <th>Precio aprox.</th>
+                  <th>Donde los encuentras</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr><td>Capuccino</td><td>Café con leche espumada.</td><td>$50</td><td>Café Avellaneda, Starbucks</td></tr>
+              <tr><td>Cold Brew</td><td>Café infusionado en frío.</td><td>$65</td><td>Café Nin, Casa Cardinal</td></tr>
+              <tr><td>Pan artesanal</td><td>Pan fresco y crujiente.</td><td>$40</td><td>Maison Belén, Panadería Rosetta</td></tr>
+              <tr><td>Postre gourmet</td><td>Galletas y pasteles caseros.</td><td>$55</td><td>Café Ruta de la Seda</td></tr>
+              <tr><td>Matcha Latte</td><td>Té verde japonés con leche.</td><td>$70</td><td>Café Ojo de Agua</td></tr>
+              <tr><td>Chai Latte</td><td>Té especiado con leche.</td><td>$65</td><td>Café Toscano</td></tr>
+              <tr><td>Flat White</td><td>Espresso con leche aterciopelada.</td><td>$60</td><td>Café El Ilusionista</td></tr>
+              <tr><td>Americano</td><td>Clásico café negro.</td><td>$40</td><td>Tierra Garat, Café La Habana</td></tr>
+              <tr><td>Affogato</td><td>Helado con espresso.</td><td>$75</td><td>Café Cicatriz</td></tr>
+              <tr><td>Croissant</td><td>Pan francés de mantequilla.</td><td>$45</td><td>Maison Belén, Rosetta</td></tr>
+              <tr><td>Sandwich gourmet</td><td>Con ingredientes frescos.</td><td>$95</td><td>Café Nin</td></tr>
+              <tr><td>Brownie</td><td>Chocolate denso y suave.</td><td>$55</td><td>Café Cardinal</td></tr>
+              <tr><td>Cheesecake</td><td>Pastel de queso estilo NY.</td><td>$80</td><td>Café Ruta de la Seda</td></tr>
+              <tr><td>Chocolate caliente</td><td>Cacao artesanal espumoso.</td><td>$60</td><td>Tierra Garat</td></tr>
+          </tbody>
+      </table>
+    </div>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2025 Cafeterías CDMX

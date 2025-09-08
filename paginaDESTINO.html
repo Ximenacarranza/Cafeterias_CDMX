@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gracias por tu mensaje</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f2ed;
+      padding: 50px;
+      color: #333;
+    }
+    .card {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2 class="text-center mb-4">¡Gracias por tu recomendación!</h2>
+    <p><strong>Nombre:</strong> <span id="mostrarNombre"></span></p>
+    <p><strong>Correo:</strong> <span id="mostrarCorreo"></span></p>
+    <p><strong>Mensaje:</strong> <span id="mostrarMensaje"></span></p>
+  </div>
+
+  <script>
+    document.getElementById('mostrarNombre').textContent = localStorage.getItem('nombre') || 'No disponible';
+    document.getElementById('mostrarCorreo').textContent = localStorage.getItem('correo') || 'No disponible';
+    document.getElementById('mostrarMensaje').textContent = localStorage.getItem('mensaje') || 'No disponible';
+  </script>
+</body>
+</html>
